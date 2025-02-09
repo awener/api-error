@@ -19,7 +19,10 @@ export class ApiKeyGuard implements CanActivate {
       const validateKey = await this.authService.validateApiKey(apiKey);
       return validateKey;
     } catch (error) {
-      throw new HttpException(error.message || "Invalid API Key", HttpStatus.UNAUTHORIZED);
+      throw new HttpException(
+        error.message || "Invalid API Key",
+        HttpStatus.UNAUTHORIZED,
+      );
     }
   }
 }
