@@ -14,7 +14,7 @@ export class AppController {
   getMain(): string {
     for (let i = 0; i < 20; i++) {
       const n = i;
-      console.log("hehehe");
+      console.log("hehehe -");
       const arr = [1, 2, 3, 4];
       arr.forEach((n) => n + 22);
       console.log("what the hell is this");
