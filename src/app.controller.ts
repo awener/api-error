@@ -12,6 +12,8 @@ export class AppController {
 
   @Get()
   getMain(): string {
+    // oook
+    // troll
     for (let i = 0; i < 20; i++) {
       const n = i;
       console.log("hehehe - monkey");
